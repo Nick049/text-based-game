@@ -4,26 +4,26 @@
 public class SkeletonEnemies1 {
 }
 
-Skeleton
-        Intro: “A Skeleton pulls itself from its resting place”
-        Attack 1: “The Skeleton swings it’s rusted blade towards (Char) and deals _ damage”
-        Attack 2: “In a fury, the Skeleton brings down it’s ancient sword on (Char), dealing _ damage”
+//Skeleton
+
+        //Intro:“A Skeleton pulls itself from its resting place”
+        System.out.println("A Skeleton pulls itself from its resting place");
+        //Attack 1: “The Skeleton swings it’s rusted blade towards (Char) and deals _ damage”
+        System.out.println("The Skeleton swings it's rusted blade toweds (Char) and deals _ daladge");
+        Attack 2(Crit): “In a fury, the Skeleton brings down it’s ancient sword on (Char), dealing _ damage”
+        System.out.println("In a fury, the Skeleton brings doewn it's ancient sword on (Char), dealing _ damadge");
         Death: “The Skeleton collapses into a pile of (finally) lifeless bones”
+        System.out.println("The Skeleton collapses into a pile of lifeless bones");
         Drop: “The Skeleton dropped (0-1) Health Potion”
+    S   System.out.println("The Skeleton droped (x)");
 
         Skull Raider
         Intro: “A Skull Raider approaches, its weapon drawn”
+        
         Attack 1: “The Skull Raider brings down it’s ancient axe at (Char), dealing _ damage”
         Attack 2: “In it’s rampage, the Skull Raider swings it’s axe wildly toward (Char), dealing _ damage”
         Death: “The Skull Raider falls apart, collapsing to the ground in a pile of lifeless bones”
         Drop: “The Skull Raider dropped (0-2) Health Potion and (0-1) Berserker Potion”
-
-        Skull Knight
-        Intro: “An armored Skull Knight approaches, its weapon drawn”
-        Attack 1: “The Skull Knight brings down its mighty blade at (Char), dealing _ damage”
-        Attack 2: “An enraged Skull Knight swings it’s blade wildly at (Char), dealing _ damage”
-        Death: “The Skull Knight’s armor clangs to the ground as it collapses into a pile of lifeless bones”
-        Drop: “The Skull Knight dropped (1-3) Health Potion and (0-2) Berserker Potion”
 
         Skull Mage
         Intro: “A robed Skull Mage appears, it’s scepter at the ready”
@@ -39,7 +39,8 @@ Skeleton
         Death: “The Skull Cavalry collapses to the ground, both horse and rider no more than a pile of bones.”
         Drop: “The Skull Cavalry dropped (1-4) Health Potion and (0-3) Berserker Potion”
 
-        Lord of The 13th Grave
+        //Boss
+        Lord of The 13th Grave (Dark Souls)
         Intro: As dark fog fills the room, an ominous roar fills the party’s ears. The dragging of a ball and chain signifies the danger, and with it, the Lord of The 13th Grave reveals itself!
         Attack 1: “The Lord of The 13th Grave swings its giant mace at (Char), dealing _ damage”
         Attack 2: “The Lord of The 13th Grave smashes it’s massive flail at (Char), dealing _ damage”

@@ -7,13 +7,13 @@ public class Player {
     private int playerLevel;
     private int healthMoves;
 
-    int minA;
-    int maxA;
+    int minA = 1;
+    int maxA = 4;
 
-    int minH;
-    int maxH;
-    int minHH;
-    int maxhh;
+    int minH = 20;
+    int maxH = 30;
+    int minHH = 25;
+    int maxhh = 35;
 
 
     private int xp;
@@ -23,7 +23,17 @@ public class Player {
     //in the case that they have the same name.
     public Player(){
         this.playerLevel = 1;
-        health = Math.floor(Math.random() * (maxA - minA + 1) + minA);
+        //health
+        double doubleHealth = Math.random() * 5;
+        health = (int)doubleHealth;
+        //defense
+        double doubleDef = Math.random() * 5;
+        defense = (int)doubleDef;
+        //attack
+        double doubleAttack = Math.random() * 5;
+        health = (int)doubleAttack;
+
+
         healthMoves = 2;
     }
 
