@@ -6,8 +6,13 @@ public class Player {
     private int attack;
     private int playerLevel;
     private int healthMoves;
-    int min = 1;
-    int max = 4;
+    int minA = 1;
+    int maxA = 4;
+
+    int minH = 20;
+    int maxH = 30;
+    int minHH = 25;
+    int maxhh = 35;
 
 
     private int xp;
@@ -16,11 +21,8 @@ public class Player {
     //the "this" key word refers to the object's variable instead of the function's input
     //in the case that they have the same name.
     public Player(){
-        this.playerLevel = (int)Math.floor(Math.random() * (max - min + 1) + min);
-        health = (int)Math.floor(Math.random() * (max - min + 1) + min);;
-        defense = (int)Math.floor(Math.random() * (max - min + 1) + min);;
-        attack = (int)Math.floor(Math.random() * (max - min + 1) + min);;
-        healthMoves = 0;
+        this.playerLevel = 0;
+        healthMoves = 2;
     }
 
     //getters (allow the programmers to see the values of the instance variables

@@ -1,32 +1,51 @@
-
+import java.util.*;
 public class Main {
-
     public static void main(String[] args) {
-//most of this assignment is trying to read the existing code to understand how it works,
-        //ask a classmate or instructor if you are unsure how the code works.
+        Scanner input = new Scanner(System.in);
+        Random num = new Random();
+        //gets attack
+        int minA = 1;
+        int maxA = 4;
+        int damadge = (int) Math.floor(Math.random() * (maxA - minA + 1) + minA);
+
+        int LV_UP_EXP = 15;
+
+        //gets player health
+        int maxH = 30;
+        int minH = 20;
+        int maxHH = 25;
+        int minHH = 35;
+        int C1H = (int) Math.floor(Math.random() * (maxH - minH + 1) + minH);
+        int C2H = (int) Math.floor(Math.random() * (maxH - minH + 1) + minH);
+        int C3H = (int) Math.floor(Math.random() * (maxHH - minHH + 1) + minHH);
 
 
-        //generate a new player
-        Player newPlayer = new Player();
-        //main game loop that continues while the player is alive
-        //fill the () with a call to a method that checks if the player is alive
-        while(newPlayer.isAlive()) {
-            //generate a new enemy( the level of the enemy should be the player's level)
-            Enemy newEnemy = new Enemy(newPlayer.getPlayerLevel());
-            //battle loop that should continue while both the player and enemy are alive
-            //Fill the () with a check to make sure the player is alive and(&&) the enemy is alive
-            while(newPlayer.isAlive() && newEnemy.isAlive() ) {
-                //gets player's input on what to do (use one of the methods to do this)
-                newPlayer.menu(newEnemy);
-                //have the enemy take damage
-                newEnemy.takeDamage(newPlayer);
-                //have the player take damage
-                newPlayer.takeDamage(newEnemy);
+        //gets enemy health
+        int maxEH = 15;
+        int minEH = 7;
+        int E1H = (int) Math.floor(Math.random() * (maxEH - minEH + 1) + minEH);
+        int E2H = (int) Math.floor(Math.random() * (maxEH - minEH + 1) + minEH);
+        int E3H = (int) Math.floor(Math.random() * (maxEH - minEH + 1) + minEH);
+
+        //Char1 = attacker, Char2 = attacker, Char3 = healer
+        int Char1H = (int) Math.floor(Math.random() * (maxH - minH + 1) + minH); //attacker
+        int Char2H = (int) Math.floor(Math.random() * (maxH - minH + 1) + minH); //attacker
+        int Char3H = (int) Math.floor(Math.random() * (maxHH - minHH + 1) + minH); //healer
+
+        int LV = 1;
+
+        System.out.println("Enemy(1):" + E1H +" Enemy(2):" + E2H + " Enemy(3):" + E3H);
+        System.out.println("-------------------------------------------------------------");
+        System.out.println("Attacker(1):" + C1H + " Attacker(2)" + C2H + " Healer(3):" + C3H);
+        System.out.println("What would you like to do: (A)ttack, (H)eal, (S)tats");
+        String move = input.nextLine();
+        if (move.equalsIgnoreCase("A")) {
+            System.out.println("Who would you like to attack?(1)(2)(3)?");
+            int AttackInput = Integer.parseInt(input.nextLine());
+            if(AttackInput == 1){
+                E1H = E1H - 1;
             }
-        }
-        //once the player is dead print out the player's level and how much xp they had.
-        //use the following format: Level: 2 XP: 5
-        System.out.println("Level: " + newPlayer.getPlayerLevel() + " XP: " + newPlayer.getXP());
 
+        }
     }
 }
