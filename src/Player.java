@@ -6,13 +6,14 @@ public class Player {
     private int attack;
     private int playerLevel;
     private int healthMoves;
-    int minA = 1;
-    int maxA = 4;
 
-    int minH = 20;
-    int maxH = 30;
-    int minHH = 25;
-    int maxhh = 35;
+    int minA;
+    int maxA;
+
+    int minH;
+    int maxH;
+    int minHH;
+    int maxhh;
 
 
     private int xp;
@@ -21,7 +22,8 @@ public class Player {
     //the "this" key word refers to the object's variable instead of the function's input
     //in the case that they have the same name.
     public Player(){
-        this.playerLevel = 0;
+        this.playerLevel = 1;
+        health = Math.floor(Math.random() * (maxA - minA + 1) + minA);
         healthMoves = 2;
     }
 

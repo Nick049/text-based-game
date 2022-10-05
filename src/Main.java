@@ -43,7 +43,7 @@ public class Main {
             System.out.println("Who would you like to attack?(1)(2)(3)?");
             int AttackInput = Integer.parseInt(input.nextLine());
             if(AttackInput == 1){
-                E1H = E1H - 1;
+                E1H = E1H - damadge;
             }
 
         }
