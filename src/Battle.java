@@ -42,4 +42,4 @@ public class Battle {
 }
 
 
-Enemy.Ske
+Enemy.Skeleton

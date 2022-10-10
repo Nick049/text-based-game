@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fc3945d-b93a-4fde-bbac-f57074acd5cb" name="Default" comment="">
-<<<<<<< Updated upstream
+change = Updated = upstream
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Chests.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SkeletonEnemies1.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />

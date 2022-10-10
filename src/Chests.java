@@ -19,7 +19,7 @@ Intro: “You encounter an ever-so-slightly rusty chest, made from oak wood and 
         Tier II Boss Chest
         Intro: “You come across an ornate-looking chest made from rich oak wood and lined with gleaming steel. A piece of topaz adorns the front of the container.”
         Drop: “You found (2-6) Health Potions, (2-4) Berserker Potions, and (2-3) Mana Potions in the gleaming chest.”
-        
+
         Tier III Boss Chest
         Intro: “You come across an ornate-looking chest made from rich oak wood and lined with gleaming steel. A piece of amethyst adorns the front of the container.”
         Drop: “You found (2-7) Health Potions, (2-5) Berserker Potions, and (2-4) Mana Potions in the gleaming chest.”

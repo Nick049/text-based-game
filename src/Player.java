@@ -93,7 +93,7 @@ public class Player {
         if (damage<1){
             damage = 1;
         }
-        health = health -damage;
+        health = health - damage;
         System.out.println("the enemy attacked you and you took: " + damage+ " damage!");
         if(isAlive()){
             return  true;
